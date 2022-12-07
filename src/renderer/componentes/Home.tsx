@@ -13,12 +13,12 @@ function Home({ titulo }: PropsComponente) {
       />
 
       <Botones
-      nombre='Classroom'
-      link ='https://classroom.google.com/u/0/c/Mjg0MDIzNjg3MTQ4'
+        nombre='Classroom'
+        link ='https://classroom.google.com/u/0/c/Mjg0MDIzNjg3MTQ4'
       />
       <Botones
-      nombre='GitHub'
-      link ='https://github.com/JazDonofrio/Donofrio_Poec'  />
+        nombre='GitHub'
+        link ='https://github.com/JazDonofrio/Donofrio_Poec'  />
     </div>
   );
 }

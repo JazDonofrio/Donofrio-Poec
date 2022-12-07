@@ -6,8 +6,9 @@ type PropsBotones = {
 function Botones({nombre, link} : PropsBotones) {
   return (
     <div className="Botones">
-        <a target="blank" href={link}></a>
+        <a target="_blank" href={link}>
         <button>{nombre}</button>
+        </a>
     </div>
   );
 }
