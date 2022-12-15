@@ -109,12 +109,23 @@
     }
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.0",
+    "@mui/styled-engine-sc": "^5.11.0",
+    "bootstrap": "^5.2.3",
+    "css-skeletons": "^1.0.7",
     "electron-debug": "^3.2.0",
     "electron-log": "^4.4.8",
     "electron-updater": "^5.2.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-content-loader": "^6.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.0"
+    "react-loading-skeleton": "^3.1.0",
+    "react-router-dom": "^6.4.0",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",

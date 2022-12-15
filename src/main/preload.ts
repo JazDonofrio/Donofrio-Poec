@@ -1,9 +1,12 @@
-import { contextBridge, ipcRenderer, IpcRendererEvent } from 'electron';
+import { contextBridge, ipcRenderer } from 'electron';
 
 export type Channels = 'ipc-example';
 
-contextBridge.exposeInMainWorld('electron', {
-  ipcRenderer: {
+contextBridge.exposeInMainWorld('nativeFunctions', {
+  minimize: () => ipcRenderer.send('minimize'),
+  close: () => ipcRenderer.send('close'),
+
+  /*  ipcRenderer: {
     sendMessage(channel: Channels, args: unknown[]) {
       ipcRenderer.send(channel, args);
     },
@@ -19,5 +22,5 @@ contextBridge.exposeInMainWorld('electron', {
     once(channel: Channels, func: (...args: unknown[]) => void) {
       ipcRenderer.once(channel, (_event, ...args) => func(...args));
     },
-  },
+  }, */
 });
